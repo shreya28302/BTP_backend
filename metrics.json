@@ -1,0 +1,30 @@
+{
+    "metrics" :[
+     {
+         "name":"balance",
+         "description":"Minimum ratio between protected group members in a cluster and protected group members in the data set, measured over all groups and clusters. Its value lies between 0 and 1. By 0 means unfair and 1 means fair."
+         
+     },
+     {
+         "name":"kcenter cost",
+         "description":"Maximum of the minimum distance between any data point to the cluster center. Lower cost leads to more fairness."
+         
+     },
+     {
+         "name":"kmeans cost",
+         "description":"Sum of the minimum of the distances squared to the cluster centers. Lower cost leads to high fairness."
+         
+     },
+     {
+        "name":"kmedian cost",
+        "description":"Sum of the minimum of the distances to the cluster centers. Lower cost leads to high fairness."
+        
+    },
+    {
+        "name":"proportionality (rho)",
+        "description":"For n samples and k clusters, any n/k points are entitled to form their own cluster if there is another center that is closer in distance for all n/k points. Higher proportionality leads to high fairness."
+        
+    }  
+]
+
+}

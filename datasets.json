@@ -1,0 +1,56 @@
+{
+       "datasets" :[
+        {
+            "name":"bank",
+            "description":"The data is about marketing campaigns of a Portuguese bank. The campaigns were based on phone calls. Often, more than one contact to the same client was required, in order to access if the product (bank term deposit) would be ('yes') or not ('no') subscribed. ",
+            "type":"binary",
+            "protectedAttributes":[
+                {
+                    "attributeName":"marital",
+                    "privileged":"married",
+                    "unprivileged":"unmarried"
+                },
+                {
+                    "attributeName":"gender",
+                    "privileged":"female",
+                    "unprivileged":"male"
+                }
+            ]
+        },
+        {
+            "name":"census",
+            "type":"binary",
+            "description":"This is 1994 Census data. A set of reasonably clean records was extracted using the following conditions: ((AAGE>16) && (AGI>100) && (AFNLWGT>1)&& (HRSWK>0)). Prediction task is to determine whether a person makes over 50K a year.",
+            "protectedAttributes":[
+                {
+                    "attributeName":"gender",
+                    "privileged":"female",
+                    "unprivileged":"male"
+                }
+            ]
+        },
+        {
+            "name":"diabetes full",
+            "description":"The data set represents 10 years (1999-2008) of clinical care at 130 US hospitals. It has over 50 features representing patient and hospital outcomes. Helps to figure out situations where a patient will not be readmitted, or if their are going to be readmitted in less than 30 days ",
+            "type":"binary",
+            "protectedAttributes":[
+                {
+                    "attributeName":"gender",
+                    "privileged":"female",
+                    "unprivileged":"male"
+                }
+            ]
+        } ,
+        {
+            "name":"iris",
+            "description":"The datasets consists of three iris species with 50 samples each as well as some properties about each flower. One flower species is linearly separable from the other two, but the other two are not linearly separable from each other.",
+            "type":"nonbinary"
+        } ,
+        {
+            "name":"diabetes",
+            "description":"The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.",
+            "type":"nonbinary"
+        } 
+]
+  
+}

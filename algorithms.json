@@ -1,0 +1,22 @@
+{
+    "algorithms" :[
+     {
+        "name":"MCF",
+        "pipeline":"preprocessing algorithm",
+        "description":"This Algorithm introduces the concept of fairlets, which are subsets of data points that can be used to achieve fairness in clustering. It proposes a two-step approach where initial clusters are formed using a base clustering algorithm, followed by refining the clusters to satisfy fairness constraints based on fairlets.",
+        "type":"binary"
+    },
+    {
+        "name":"Scalable",
+        "pipeline":"preprocessing algorithm",
+        "description":"Scalable algorithm for fair clustering, which can efficiently handle large datasets. uses techniques such as resampling, re-weighting, re-ranking, and parallel processing to ensure fairness in cluster compositions while addressing scalability challenges.",
+        "type":"binary"
+    },
+    {
+        "name":"Proportionality",
+        "pipeline":"inprocessing algorithm",
+        "description":"This Algorithm proposes a fairness notion called proportionality fairness. Aims to ensure that each cluster contains a proportionate representation of different sensitive attribute groups. uses fairness constraints and optimization techniques to achieve proportionality fairness in cluster compositions.",
+        "type":"nonbinary"
+    }
+   ]
+}
