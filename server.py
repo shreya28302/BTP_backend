@@ -105,4 +105,4 @@ def get_original():
                     {"name":"proportionality (rho)", "value":"1.01"}]
     
 if __name__ == '__main__':
-	app.run(debug=False)
+	app.run(debug=False, port=8001)
